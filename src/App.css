@@ -5,6 +5,15 @@
   text-align: center;
 }
 
+ul.unstyled-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; /* Removes bullet points */
+}
+
+.text-align-left {
+  text-align: left;
+}
 
 .card {
   padding: 2em;
