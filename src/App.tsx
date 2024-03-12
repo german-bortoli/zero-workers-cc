@@ -56,8 +56,10 @@ function App() {
     });
   };
 
+  const countriesArray = [...countries.values()];
+
   // Check if all countries are selected (for select all checkbox)
-  const isCheckedAll = [...countries.values()].every(
+  const isCheckedAll = countriesArray.every(
     (country: CountryItem) => country.checked
   );
 
@@ -76,7 +78,7 @@ function App() {
           />
           <label htmlFor="id-all">Select All</label>
         </li>
-        {[...countries.values()].map((country) => (
+        {countriesArray.map((country) => (
           <li key={country.countryCode}>
             <input
               type="checkbox"
